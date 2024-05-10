@@ -17,5 +17,9 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Medicamentos genéricos page"></app-explore-container>
+  <!-- <app-explore-container name="Medicamentos genéricos page"></app-explore-container> -->
+
+  <ion-list>
+    <app-message *ngFor="let message of getMessages()" [message]="message"></app-message>
+  </ion-list>
 </ion-content>

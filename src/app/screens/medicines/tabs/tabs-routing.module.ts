@@ -26,6 +26,16 @@ const routes: Routes = [
         path: 'costosos',
         loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
       },
+      // {
+      //   path: 'genericos/:id',
+      //   children: [
+      //     {
+      //       path: '',
+      //       loadChildren: () =>
+      //         import('../tab1/view-message/view-message.module').then(m => m.ViewMessagePageModule)
+      //     }
+      //   ]
+      // },  
       {
         path: '',
         // redirectTo: '/tabs/tab1',
