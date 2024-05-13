@@ -5,6 +5,7 @@ export interface Message {
   subject: string;
   date: string;
   id: number;
+  price?: number;
   read: boolean;
 }
 
@@ -14,25 +15,28 @@ export interface Message {
 export class DataService {
   public messages: Message[] = [
     {
-      fromName: 'Matt Chorsey',
+      fromName: 'Acetaminofén',
       subject: 'New event: Trip to Vegas',
       date: '9:32 AM',
       id: 0,
-      read: false
+      read: false,
+      price: 13000
     },
     {
-      fromName: 'Lauren Ruthford',
+      fromName: 'Ibuprofeno',
       subject: 'Long time no chat',
       date: '6:12 AM',
       id: 1,
-      read: false
+      read: false,
+      price: 16550 
     },
     {
-      fromName: 'Jordan Firth',
+      fromName: 'Tramadol',
       subject: 'Report Results',
       date: '4:55 AM',
       id: 2,
-      read: false
+      read: false,
+      price: 15650
     },
     {
       fromName: 'Bill Thomas',
