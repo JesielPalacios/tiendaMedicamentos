@@ -3,31 +3,40 @@
   [routerLink]="'/medicamentos/genericos/' + message.id"
   [detail]="false"
 >
-  <!-- <div slot="start" [class]="!message.read ? 'dot dot-unread' : 'dot'"></div>
-  <ion-label class="ion-text-wrap">
-    <h2>
-      {{ message.fromName }}
-      <span class="date">
-        <ion-note>{{ message.date }}</ion-note>
-        <ion-icon aria-hidden="true" name="chevron-forward" size="small" *ngIf="isIos()"></ion-icon>
-      </span>
-    </h2>
-    <h3>{{ message.subject }}</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-  </ion-label> -->
-  <!-- <ion-img></ion-img> -->
-  <picture id="producImgWrapper">
-    <ion-img
-      src="../../../../../assets/img.png"
-      id="producImg"
-      itemid="imgforProduct"
-    />
-  </picture>
+  <!-- <div slot="start" [class]="!message.read ? 'dot dot-unread' : 'dot'"></div> -->
+  <ion-label class="ion-text-wrap" id="productWrapper">
+    <div class="df">
+      <ion-img
+        src="../../../../../assets/img.png"
+        id="producImg"
+        itemid="imgforProduct"
+      />
+      <div>
+        <h2>
+          {{ message.fromName }}
+        </h2>
 
-  <span>producto</span>
+        <span class="date" class="productPrice">
+          <ion-note>$ {{ message.price }}</ion-note>
+          <ion-icon
+            aria-hidden="true"
+            name="chevron-forward"
+            size="small"
+            *ngIf="isIos()"
+          ></ion-icon>
+        </span>
+
+        <h3>{{ message.category }}</h3>
+        <!-- <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p> -->
+      </div>
+    </div>
+  </ion-label>
 </ion-item>

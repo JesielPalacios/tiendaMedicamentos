@@ -1,25 +1,45 @@
 ion-item {
   // --padding-start: 0;
   // --inner-padding-end: 0;
-  display: flex;
+  // display: flex;
   // gap: 10px;
+}
+
+#productWrapper {
+  // display: flex;
+  // flex-wrap: nowrap;
+}
+
+.producTitle {
+}
+
+.df {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+}
+
+.productPrice {
 }
 
 #producImg {
   margin-right: 10px;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
 }
 
 ion-label {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  // margin-top: 12px;
+  // margin-bottom: 12px;
 }
 
 ion-item h2 {
   font-weight: 600;
   margin: 0;
-  
+
+  font-size: 20px;
+  text-align: center;
+
   /**
    * With larger font scales
    * the date/time should wrap to the next
